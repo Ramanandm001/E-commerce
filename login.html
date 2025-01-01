@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: radial-gradient(circle, #121212, #1c1c1c);
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .form-container {
+      background: #1e1e1e;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+      max-width: 400px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #333;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #bbb;
+      font-size: 0.9rem;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1.2rem;
+      border: 1px solid #444;
+      border-radius: 5px;
+      background: #2b2b2b;
+      color: #fff;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+    }
+
+    .form-container input:focus {
+      border-color: #ff758c;
+      box-shadow: 0 4px 10px rgba(255, 117, 140, 0.3);
+      outline: none;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 0.8rem;
+      background: linear-gradient(45deg, #ff758c, #ff7eb3);
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(255, 117, 140, 0.2);
+    }
+
+    .form-container button:hover {
+      background: linear-gradient(45deg, #ff89a2, #ff9eb8);
+      transform: scale(1.05);
+    }
+
+    .form-container button:active {
+      transform: scale(0.98);
+      box-shadow: 0 2px 5px rgba(255, 117, 140, 0.2);
+    }
+
+    .floating-circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.2;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .floating-circle.circle-1 {
+      width: 200px;
+      height: 200px;
+      background: #ff758c;
+      top: -50px;
+      left: -50px;
+      animation-delay: 0s;
+    }
+
+    .floating-circle.circle-2 {
+      width: 150px;
+      height: 150px;
+      background: #ff9eb8;
+      bottom: -50px;
+      right: -50px;
+      animation-delay: 3s;
+    }
+
+    .form-container input:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(255, 117, 140, 0.3);
+    }
+
+    .form-container input::placeholder {
+      color: #777;
+      transition: color 0.3s ease;
+    }
+
+    .form-container input:focus::placeholder {
+      color: transparent;
+    }
+
+    /* Gradient border effect on hover for button */
+    .form-container button:hover {
+      border: 2px solid transparent;
+      background-image: linear-gradient(#1e1e1e, #1e1e1e), linear-gradient(45deg, #ff758c, #ff7eb3);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+    }
+
+    .form-container {
+      border: 2px solid transparent;
+      background-image: linear-gradient(#1e1e1e, #1e1e1e), linear-gradient(45deg, #ff758c, #ff7eb3);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(20px);
+      }
+    }
+
+    /* Additional Features */
+    .form-container .toggle-password {
+      position: absolute;
+      right: 15px;
+      top: calc(100% - 60px);
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: #888;
+    }
+
+    .form-container .toggle-password:hover {
+      color: #ff758c;
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-buttons button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background: #2b2b2b;
+      color: #fff;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .social-buttons button:hover {
+      background: #444;
+    }
+
+    .social-buttons button.facebook {
+      background: #3b5998;
+    }
+
+    .social-buttons button.google {
+      background: #db4437;
+    }
+
+    .social-buttons button:hover.facebook {
+      background: #4c70ba;
+    }
+
+    .social-buttons button:hover.google {
+      background: #e57373;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <div class="floating-circle circle-1"></div>
+    <div class="floating-circle circle-2"></div>
+    <h2>Sign Up</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+      <span class="toggle-password" onclick="togglePassword()">👁</span>
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <div class="social-buttons">
+      <button class="facebook">Facebook</button>
+      <button class="google">Google</button>
+    </div>
+  </div>
+
+  <script>
+    function togglePassword() {
+      const passwordField = document.getElementById('password');
+      const toggleIcon = document.querySelector('.toggle-password');
+
+      if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+        toggleIcon.textContent = '🙈';
+      } else {
+        passwordField.type = 'password';
+        toggleIcon.textContent = '👁';
+      }
+    }
+    </script>
+    </body>
+</html>
