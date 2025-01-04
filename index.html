@@ -1,195 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="My Agri is a website that provides information about agriculture and farming.">
-    <meta name="keywords" content="agriculture, farming, organic, fresh, fruits, vegetables, healthy, food">
-    <meta name="author" content="My Agri">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#000000">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="My Agri">
-    <meta name="application-name" content="My Agri">
-    <link rel="icon" type="image/png" href="Images/favicon.png">
-    <link rel="apple-touch-icon" href="Images/favicon.png">
-    <title>My Agri</title>
+    <title>AI E-commerce Chatbot</title>
+    <link rel="stylesheet" href="chat.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <img src="Images/logo.svg" alt="My Agri">
+    <div class="logo">
+        <img src="Images/logo.svg" alt="My Agri">
+    </div>
+    <nav class="navbar">
+        <div class="search" id="search-bar">
+            <img src="Images/search.svg" alt="Search">
         </div>
-        <nav class="navbar">
-            <div class="search" id="search-bar">
-                <img src="Images/search.svg" alt="Search">
-            </div>
-            <a href="#home" >Home</a>
-            <a href="#products" >Products</a>
-            <a href="#Services" >Services</a>
-            <a href="#contact" >Contact</a>
-            <a href="login.html" >Login</a>
-        </nav>
-    </header>
+        <a href="#home" >Home</a>
+        <a href="#products" >Products</a>
+        <a href="#Services" >Help & support</a>
+        <a href="#contact" >Contact</a>
+        <a href="login.html" >Login</a>
+    </nav>
+</header>
 <!-------------------------------------------------------- This is the Home page ----------------------------------------------------------->
-    <section class="home" >
-        <div class="home" id="home">
-            <div class="home-content">
-                <button class="quality-button">Believe in Quality</button>
-                <div class="home-text">
-                    <h1>Quality Trust:</h1>
-                    <h1>Direct to the Farm</h1>
-                </div>
-                <div class="line"> </div>
-                <p>We all need a little space to grow. Give yourself the space you need to find your inner you.</p>
-                <button class="contact-button">Contact Us <img src="Images/arrow.svg" alt="Arrow"></button>
+<section class="home" >
+    <div class="home" id="home">
+        <div class="home-content">
+            <button class="quality-button">Believe in Quality</button>
+            <div class="home-text">
+                <h1>Quality Trust:</h1>
+                <h1>Direct to the Farm</h1>
             </div>
-            <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
+            <div class="line"> </div>
+            <p>We all need a little space to grow. Give yourself the space you need to find your inner you.</p>
+            <button class="contact-button">Contact Us <img src="Images/arrow.svg" alt="Arrow"></button>
         </div>
-    </section>
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+</section>
 <!-------------------------------------------------------- This is the Products page ----------------------------------------------------------->
-    <section >
-        <div class="container"><h1>Our Products</h1>
-            <div class="product" id="products">
-                <div class="product-item">
-                <img alt="Image of fresh organic tomatoes in a basket" height="200" src="https://storage.googleapis.com/a1aa/image/m9eQa5EFhoQiH68J8Cen5zN7GzoM4ldCfpZU1QEPPAaxiN8nA.jpg" width="300"/>
-                <h3>Organic Tomatoes</h3>
-                <p>Fresh and organic tomatoes directly from the farm.</p>
-                <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                </div>
-    
-                <div class="product-item">
-                <img alt="Image of a bundle of fresh carrots with green tops" height="200" src="https://storage.googleapis.com/a1aa/image/Voc8olji3zKkMJ8sh9h1fW9j3Sflh7jFg4PXR8Ctp2FeiN8nA.jpg" width="300"/>
-                <h3>Fresh Carrots</h3>
-                <p>Crunchy and sweet carrots, perfect for your salads.</p>
-                <button><i class="fa-solid fa-cart-shopping"></i><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                </div>
-    
-                <div class="product-item">
-                <img alt="Image of a basket filled with fresh green cucumbers" height="200" src="https://storage.googleapis.com/a1aa/image/EN7ahlt70HpeekY9RaZaMLis0DBqqyg0di7dEeo6iTgjiN8nA.jpg" width="300"/>
-                <h3>Green Cucumbers</h3>
-                <p>Fresh cucumbers, ideal for a refreshing snack.</p>
-                <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                </div>
-    
-                <div class="product-item">
-                <img alt="Image of a bunch of ripe bananas" height="200" src="https://storage.googleapis.com/a1aa/image/arD410O6Xw6jOVjTKRHDJg7LqjDlzeNJRTVEYQGV2bvpYDfTA.jpg" width="300"/>
-                <h3>Ripe Bananas</h3>
-                <p>Sweet and ripe bananas, perfect for a healthy snack.</p>
-                <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                </div>
-    
-                <div class="product-item">
-                <img alt="Image of a basket filled with fresh red apples" height="200" src="https://storage.googleapis.com/a1aa/image/pKGCpfwqf4ogm0fGHAlzhE2kWvayuCHwfGXfng8mX9l8K2wfE.jpg" width="300"/>
-                <h3>Red Apples</h3>
-                <p>Juicy and sweet red apples, great for any time of the day.
-                </p>
-                <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                </div>
-    
-                <div class="product-item">
-                <img alt="Image of a bunch of fresh green spinach leaves" height="200" src="https://storage.googleapis.com/a1aa/image/Qepljronf2ufYIJl3hxRqrdWKuQtPMT5cv45VqSNqjNriN8nA.jpg" width="300"/>
-                <h3>Fresh Spinach</h3>
-                <p>Nutritious and fresh spinach leaves, perfect for salads and cooking.</p>
-                <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                </div>
-    
-                <div class="product-item">
-                <img alt="Image of a basket filled with fresh strawberries" height="200" src="https://storage.googleapis.com/a1aa/image/79JqkFo9oFZXIpPgBtfARt0H30oyxTOfT5QaKmWXtJeBjN8nA.jpg" width="300"/>
-                <h3>Fresh Strawberries</h3>
-                <p>Sweet and juicy strawberries, perfect for desserts and snacks.</p>
-                <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                </div>
-    
-                <div class="product-item">
-                <img alt="Image of a bunch of fresh green broccoli" height="200" src="https://storage.googleapis.com/a1aa/image/nSFDL7aejvWxIqMMH30YBB5vt6lvX60wMe0KwT6if515iN8nA.jpg" width="300"/>
-                <h3>Fresh Broccoli</h3>
-                <p>Healthy and fresh broccoli, great for steaming and salads.</p>
-                <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                </div>
-    
-                <div class="product-item">
-                <img alt="Image of a basket filled with fresh oranges" height="200" src="https://storage.googleapis.com/a1aa/image/tgH6MuWyzCq5Ad3Jk9je4QSnWvuEBQtARsVrEntBvifaxGenA.jpg" width="300"/>
-                <h3>Fresh Oranges</h3>
-                <p>Juicy and sweet oranges, perfect for a refreshing snack.</p>
-                <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                </div>
+<section >
+    <div class="container">
+        <div class="product" id="products"> 
+            <div class="product-item">
+            <img alt="Image of fresh organic tomatoes in a basket" height="200" src="https://storage.googleapis.com/a1aa/image/m9eQa5EFhoQiH68J8Cen5zN7GzoM4ldCfpZU1QEPPAaxiN8nA.jpg" width="300"/>
+            <h3>Organic Tomatoes</h3>
+            <p>Fresh and organic tomatoes directly from the farm.</p>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+            <img alt="Image of a bundle of fresh carrots with green tops" height="200" src="https://storage.googleapis.com/a1aa/image/Voc8olji3zKkMJ8sh9h1fW9j3Sflh7jFg4PXR8Ctp2FeiN8nA.jpg" width="300"/>
+            <h3>Fresh Carrots</h3>
+            <p>Crunchy and sweet carrots, perfect for your salads.</p>
+            <button><i class="fa-solid fa-cart-shopping"></i><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+            <img alt="Image of a basket filled with fresh green cucumbers" height="200" src="https://storage.googleapis.com/a1aa/image/EN7ahlt70HpeekY9RaZaMLis0DBqqyg0di7dEeo6iTgjiN8nA.jpg" width="300"/>
+            <h3>Green Cucumbers</h3>
+            <p>Fresh cucumbers, ideal for a refreshing snack.</p>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+            <img alt="Image of a bunch of ripe bananas" height="200" src="https://storage.googleapis.com/a1aa/image/arD410O6Xw6jOVjTKRHDJg7LqjDlzeNJRTVEYQGV2bvpYDfTA.jpg" width="300"/>
+            <h3>Ripe Bananas</h3>
+            <p>Sweet and ripe bananas, perfect for a healthy snack.</p>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+            <img alt="Image of a basket filled with fresh red apples" height="200" src="https://storage.googleapis.com/a1aa/image/pKGCpfwqf4ogm0fGHAlzhE2kWvayuCHwfGXfng8mX9l8K2wfE.jpg" width="300"/>
+            <h3>Red Apples</h3>
+            <p>Juicy and sweet red apples, great for any time of the day.
+            </p>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+            <img alt="Image of a bunch of fresh green spinach leaves" height="200" src="https://storage.googleapis.com/a1aa/image/Qepljronf2ufYIJl3hxRqrdWKuQtPMT5cv45VqSNqjNriN8nA.jpg" width="300"/>
+            <h3>Fresh Spinach</h3>
+            <p>Nutritious and fresh spinach leaves, perfect for salads and cooking.</p>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+            <img alt="Image of a basket filled with fresh strawberries" height="200" src="https://storage.googleapis.com/a1aa/image/79JqkFo9oFZXIpPgBtfARt0H30oyxTOfT5QaKmWXtJeBjN8nA.jpg" width="300"/>
+            <h3>Fresh Strawberries</h3>
+            <p>Sweet and juicy strawberries, perfect for desserts and snacks.</p>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+            <img alt="Image of a bunch of fresh green broccoli" height="200" src="https://storage.googleapis.com/a1aa/image/nSFDL7aejvWxIqMMH30YBB5vt6lvX60wMe0KwT6if515iN8nA.jpg" width="300"/>
+            <h3>Fresh Broccoli</h3>
+            <p>Healthy and fresh broccoli, great for steaming and salads.</p>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+            <img alt="Image of a basket filled with fresh oranges" height="200" src="https://storage.googleapis.com/a1aa/image/tgH6MuWyzCq5Ad3Jk9je4QSnWvuEBQtARsVrEntBvifaxGenA.jpg" width="300"/>
+            <h3>Fresh Oranges</h3>
+            <p>Juicy and sweet oranges, perfect for a refreshing snack.</p>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
             </div>
         </div>
-    </section>
-    <button class="chatbot">
-        <a href="Testing/ai-chat.html">ai</a>
-        <i class="fa-brands fa-rocketchat"></i>
-    </button>
+    </div>
+</section>
+<button class="chatbot">
+    <a href="Testing/ai-chat.html">ai</a>
+    <i class="fa-brands fa-rocketchat"></i>
+</button>
 <!---------------------------------------------------------------- This is the Contact page -------------------------------------------------------->
 
 <section class="contact" id="contact">
-    <div class="contact-text">
-        <h2>contact <span>me</span></h2>
-        <div class="com-md-6 col-sm-12 col-xs-12">
-            <div class="map-area">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3617.5005170605523!2d85.32964243095192!3d27.747675720270088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2snp!4v1734777336896!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-            
-        <div class="contact-list">
-            <li><i class="bx bxs-send"></i>ramanandmandal759@gmail.com</li>
-            <li><i class="bx bxs-phone"></i>+9779829704557</li>
-        </div>
-        <div class="contact-icons">
-            <a href="https://www.facebook.com/profile.php?id=100058685671028&mibextid=ZbWKwL"><i class="bx bxl-facebook"></i></a>
-            <a href=""><i class="bx bxl-twitter"></i></a>
-            <a href="https://www.instagram.com/ramanand_mandal_001/"><i class="bx bxl-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/ramanand-mandal-24a124324/"><i class ='bx bxl-linkedin'></i></a>
+<div class="contact-text">
+    <h2>contact <span>me</span></h2>
+    <div class="com-md-6 col-sm-12 col-xs-12">
+        <div class="map-area">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3617.5005170605523!2d85.32964243095192!3d27.747675720270088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2snp!4v1734777336896!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-    <div class="contact-form">
-        <form action="">
-            <input type="" placeholder="Enter your Name" required>
-            <input type="email" placeholder="Enter your Emaail" required>
-            <input type="" placeholder="Enter your subject" required>
-            <textarea name="" id="" cols="40" rows="10" placeholder="Enter your message" required></textarea>
-            <input type="submit" vakue="submit" class="send">
-        </form>
+        
+    <div class="contact-list">
+        <li><i class="bx bxs-send"></i>ramanandmandal759@gmail.com</li>
+        <li><i class="bx bxs-phone"></i>+9779829704557</li>
     </div>
-    </div>
+</div>
+<div class="contact-form">
+    <form action="">
+        <input type="" placeholder="Enter your Name" required>
+        <input type="email" placeholder="Enter your Emaail" required>
+        <input type="" placeholder="Enter your subject" required>
+        <textarea name="" id="" cols="40" rows="10" placeholder="Enter your message" required></textarea>
+        <input type="submit" vakue="submit" class="send">
+    </form>
+</div>
+</div>
 </section>
-    <!------------------------------------ This is the footer section -------------------------->
-    <div class="last-text">
-        <p>Developed with love by Ramanand Mandal -- 2024</p>
+<!------------------------------------ This is the footer section -------------------------->
+<div class="last-text">
+    <p>Developed with love by Ramanand Mandal---2024</p>
+</div>
+<!-------------------------------------- mouse cursor effects ---------------------------------->
+<div class="cursor"></div>
+
+<!------------------------------------------------ Chatbot --------------------------------->
+<div class="chatbot-container" id="chatbot">
+    <div class="chatbot-header">Chat with Ramanand !</div>
+    <div class="chat-messages" id="chat-messages"></div>
+    <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button id="send-btn">Send</button>
     </div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!------------------- mouse cursor effects -------------->
-    <div class="cursor"></div>
-
-
-    <script src="script.js"></script>
+<!------------------------------------ Chatbot Toggle Button ----------------------------------->
+<button class="chatbot-toggle" id="chatbot-toggle">💬</button>
+<script src="chat.js"></script>
 </body>
 </html>
