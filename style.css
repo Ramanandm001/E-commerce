@@ -158,11 +158,14 @@ i{
 .container {
     padding: 20px;
 }
+
+
 .product {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 
 .product-item :hover {
     transform: translateY(-10px);
@@ -198,26 +201,7 @@ i{
 .product-item button:hover {
     background-color: #45a049;
 }
-.chatbot {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #3cc641;
-    color: rgb(105, 11, 11);
-    border: none;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-.chatbot i {
-    font-size: 24px;
-    color: #000;
-}
+
 /* mouse cursor effect */
 .cursor {
     width: 15px;
@@ -300,36 +284,6 @@ i{
     transform: scale(1.01) translateY(-5px);
     color: #0ef;
 }
-
-
-
-
-
-.contact-icons a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width:40px;
-    background: transparent;
-    border: 2px solid#0ef;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #0ef;
-    text-decoration: none;
-    margin: 30px 15px 30px 0;
-    transition: 5s ease;
-    opacity: 0;
-    animation: slideleft 1s ease forwards;
-    animation-delay: calc(.2s *var(--i));
-    }
-    .contact a:hover{
-    background: #0ef;
-    color: #081b29;
-    box-shadow: 0 0 20px#0ef;
-    }
-
-
 
 
 
